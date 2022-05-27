@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         UserService userService = new UserServiceImpl();
-        userService.cleanUsersTable();
+
 
         userService.createUsersTable();
 
@@ -20,6 +20,9 @@ public class Main {
 
         userService.removeUserById(1);
 
-        userService.getAllUsers();
+
+        System.out.println(userService.getAllUsers());
+        userService.cleanUsersTable();
+        userService.dropUsersTable();
     }
 }
