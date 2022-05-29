@@ -1,9 +1,6 @@
 package jm.task.core.jdbc.dao;
 
 import jm.task.core.jdbc.model.User;
-import jm.task.core.jdbc.util.Util;
-
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -57,7 +54,6 @@ public class UserDaoJDBCImpl implements UserDao {
             pS.executeUpdate();
             connection.commit();
             System.out.println("User " + name + " is added to list.");
-            connection.commit();
         } catch (SQLException e) {
             e.printStackTrace();
             try {
