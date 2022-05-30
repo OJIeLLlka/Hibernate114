@@ -17,18 +17,10 @@ import java.util.Properties;
 public class Util {
     // реализуйте настройку соеденения с БД
 
-//    private static Util util;
     private static final String DB_URL = "jdbc:mysql://localhost:3306/mydatabase";
     private static final String DB_USERNAME = "root";
     private static final String DB_PASSWORD = "root";
     private static SessionFactory sessionFactory;
-
-//    public static synchronized Util getUtil() {
-//        if (util == null) {
-//            util = new Util();
-//        }
-//        return util;
-//    }
 
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
