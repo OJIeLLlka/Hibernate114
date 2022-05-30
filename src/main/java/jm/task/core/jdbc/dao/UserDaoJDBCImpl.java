@@ -5,14 +5,14 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static jm.task.core.jdbc.util.Util.getUtil;
+import static jm.task.core.jdbc.util.Util.getConnection;
 
 public class UserDaoJDBCImpl implements UserDao {
     private final Connection connection;
     private static int userCount;
 
     public UserDaoJDBCImpl() {
-        connection = getUtil().getConnection();
+        connection = getConnection();
     }
 
     @Override
