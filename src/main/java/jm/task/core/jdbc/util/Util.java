@@ -44,7 +44,7 @@ public class Util {
                 settings.put(Environment.URL, DB_URL);
                 settings.put(Environment.USER, DB_USERNAME);
                 settings.put(Environment.PASS, DB_PASSWORD);
-                settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQLDialect");
+                settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL57Dialect");
 
                 settings.put(Environment.SHOW_SQL, "true");
                 settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
